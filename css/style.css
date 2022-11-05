@@ -155,6 +155,8 @@ img {
 .contact-link {
   position: relative;
   color: var(--main-color);
+  fill: var(--accent-color);
+
   transition: color var(--animation-duration) var(--animation-function);
 }
 
@@ -164,7 +166,7 @@ img {
 .contact-link:focus,
 .top-nav .nav-link.current {
   color: var(--accent-color);
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .current::after {
@@ -178,12 +180,6 @@ img {
   border-radius: 2px;
 
   background-color: var(--accent-color);
-}
-
-.contact-link:hover .contact-icon,
-.contact-link:focus .contact-icon {
-  color: #2196f3;
-  fill: #2196f3;
 }
 
 .contact-link {
@@ -200,11 +196,19 @@ img {
   border: none;
   fill: #757575;
   margin-right: 10px;
+
+  transition: fill var(--animation-duration) var(--animation-function);
 }
 
-.contact-icon:hover {
-  fill: #188ce8;
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
+  /* color: #2196f3; */
+  fill: #2196f3;
 }
+
+/* .contact-icon:hover {
+  fill: #188ce8;
+} */
 
 .info-dv {
   display: flex;
