@@ -57,7 +57,7 @@
     <main>
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="b-color heroy-btn" type="button">
+        <button class="b-color heroy-btn" type="button" data-modal-open>
           Замовити послугу
         </button>
       </section>
@@ -462,5 +462,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- модалка -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-close" data-modal-close></button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
